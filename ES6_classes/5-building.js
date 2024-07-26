@@ -1,9 +1,9 @@
 export default class Building {
-  constructor(sqft){
-	if (new.target === Building){
-      throw new Error('You cannot instantiate an abstract class directly')
-	}
-	this.sqft = sqft;
+  constructor(sqft) {
+    if (this.constructor !== Building && this.evacuationWarningMessage === undefined) {
+      throw new Error('You cannot instantiate an abstract class directly');
+    }
+    this.sqft = sqft;
   }
 
   get sqft() {
@@ -11,13 +11,9 @@ export default class Building {
   }
 
   set sqft(value) {
-    if (typeof value !== 'number'){
-      throw new TypeError('Sqft must be a number')
-	}
-	this._sqft = value;
-  }
-
-  evacuationWarningMessage(){
-	throw new Error('the method evacuationWarningMessage must be implemented')
+    if (typeof value !== 'number') {
+      throw new TypeError('Sqft must be a number');
+    }
+    this._sqft = value;
   }
 }
