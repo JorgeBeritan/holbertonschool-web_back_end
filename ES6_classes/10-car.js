@@ -17,7 +17,7 @@ export default class Car {
     return this._motor;
   }
 
-  set motor() {
+  set motor(value) {
     this._motor = value;
   }
 
