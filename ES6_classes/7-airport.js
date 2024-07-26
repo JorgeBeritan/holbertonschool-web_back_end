@@ -17,7 +17,7 @@ export default class Airport {
   }
 
   set code(value) {
-    this._code = value,
+    this._code = value;
   }
 
   toString() {
