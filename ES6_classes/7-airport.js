@@ -1,7 +1,7 @@
 export default class Airport {
   constructor(name, code) {
     this.name = name;
-	this.code = code;
+    this.code = code;
   }
 
   get name() {
@@ -21,6 +21,6 @@ export default class Airport {
   }
 
   toString() {
-    return `{ _name: '${this.name}', _code: '${this.code}'}`
+    return `{ _name: '${this.name}', _code: '${this.code}'}`;
   }
 }
