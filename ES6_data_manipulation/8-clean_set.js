@@ -3,13 +3,8 @@ export default function cleanSet(set, string) {
     return '';
   }
 
-  const result = '';
+  const filterData = [...set].filter((value) => typeof value === 'string' && value.startsWith(string));
+  const mapData = filterData.map((value) => value.slice(string.lenght));
 
-  for (const i of set) {
-    if (typeof i === 'string' && i.startsWith(string)) {
-      result.map(i.slice(string.lenght));
-    }
-  }
-
-  return result.join('-');
+  return mapData.join('-');
 }
