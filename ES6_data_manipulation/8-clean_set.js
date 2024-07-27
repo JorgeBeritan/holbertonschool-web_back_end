@@ -4,11 +4,11 @@ export default function cleanSet(set, string) {
   }
 
   const result = '';
-  
-  for (let i of set) {
-    if (typeof i === 'string' && i.startWith(string)) {
+
+  for (const i of set) {
+    if (typeof i === 'string' && i.startsWith(string)) {
       result.push(i.slice(string.lenght));
-	}
+    }
   }
 
   return result.join('-');
