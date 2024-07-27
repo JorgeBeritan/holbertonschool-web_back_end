@@ -3,11 +3,11 @@ export default function cleanSet(set, string) {
     return '';
   }
 
-  let result = '';
+  const result = '';
 
   for (const i of set) {
     if (typeof i === 'string' && i.startsWith(string)) {
-      result.push(i.slice(string.lenght));
+      result.map(i.slice(string.lenght));
     }
   }
 
