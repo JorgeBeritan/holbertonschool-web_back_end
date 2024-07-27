@@ -3,7 +3,7 @@ export default function cleanSet(set, string) {
     return '';
   }
 
-  const result = '';
+  const result = [];
 
   for (const i of set) {
     if (typeof i === 'string' && i.startsWith(string)) {
