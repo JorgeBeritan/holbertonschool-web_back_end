@@ -9,7 +9,7 @@ def to_string(x: float) -> str:
     Parameters:
     x(float): The first arguments
 
-    Returns:
+    Return:
     str: return a string representation of a float
     """
     return str(x)
