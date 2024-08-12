@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 def add(x: float, y: float) -> float:
-    """In this function we take 2 argument
-        the first argument take a variable x this is a float
-        and the second argument we take a variable y is a float
-        and we sum this varibales
+    """
+    Add two floating-point numbers
+
+    Parameter:
+    x (float): the first number to add
+    y (float): the second number to add
+
+    Returns:
+    float: The sums of x and y.
     """
     return x + y
