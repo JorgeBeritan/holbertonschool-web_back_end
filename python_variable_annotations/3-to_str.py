@@ -4,7 +4,7 @@
 """
 
 
-def to_string(x: float) -> str:
+def to_str(x: float) -> str:
     """
     Parameters:
     x(float): The first arguments
