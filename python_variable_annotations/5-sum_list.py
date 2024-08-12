@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
+from typing import List
 """
     Made By Me
 """
 
 
-def sum_list(input_list: list[float]) -> float:
+def sum_list(input_list: List[float]) -> float:
     """
     Sum a list of float
 
