@@ -2,7 +2,6 @@
 """
 Made by Me
 """
-
 def add(x: float, y: float) -> float:
     """
     Add two floating-point numbers
