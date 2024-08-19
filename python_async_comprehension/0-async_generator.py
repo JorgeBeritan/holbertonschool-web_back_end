@@ -8,7 +8,8 @@ import asyncio
 import random
 from typing import AsyncGenerator
 
-async def async_generator() -> AsyncGenerator[float, None] :
+
+async def async_generator() -> AsyncGenerator[float, None]:
     """
     Yield a random number between 1 and 10,
     in this function we learn how to use yield in async function
