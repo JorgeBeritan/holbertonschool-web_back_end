@@ -9,7 +9,7 @@ import random
 from typing import Generator
 
 
-async def async_generator() -> Generator[float, None]:
+async def async_generator() -> Generator[float, None, None]:
     """
     Yield a random number between 1 and 10,
     in this function we learn how to use yield in async function
