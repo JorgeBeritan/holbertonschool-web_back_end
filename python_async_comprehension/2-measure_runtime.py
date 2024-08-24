@@ -4,7 +4,7 @@
 """
 
 
-import asyncio
+from asyncio import gather
 import time
 from typing import List
 ac = __import__('1-async_comprehension').async_comprehension
@@ -17,7 +17,7 @@ async def measure_runtime() -> float:
     to complete
     """
     start: float = time.time()
-    await asyncio.gather(ac(), ac(), ac(), ac())
+    await gather(ac(), ac(), ac(), ac())
     end: float = time.time()
     total: float = end - start
     return total
