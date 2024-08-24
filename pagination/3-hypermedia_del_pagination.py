@@ -38,20 +38,22 @@ class Server:
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         """Return a dictionary with deletion-resilient pagination details."""
         assert index is not None and 0 <= index < len(self.indexed_dataset())
-        
+
         indexed_dataset = self.indexed_dataset()
         data = []
         current_index = index
 
         for _ in range(page_size):
-            while current_index not in indexed_dataset and current_index < len(self.dataset()):
+            while current_index not in indexed_dataset \
+                    and current_index < len(self.dataset()):
                 current_index += 1
             if current_index >= len(self.dataset()):
                 break
             data.append(indexed_dataset[current_index])
             current_index += 1
 
-        next_index = current_index if current_index < len(self.dataset()) else None
+        next_index = current_index if current_index < len(self.dataset()) \
+            else None
 
         return {
             "index": index,
