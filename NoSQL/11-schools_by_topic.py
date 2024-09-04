@@ -12,6 +12,6 @@ def school_by_topics(mongo_collection, topics):
     Documnents???
     """
 
-    documents = mongo_collection.find({"topics": topics})
+    documents = mongo_collection.find({"topics": {"$all": topics}})
 
     return documents
