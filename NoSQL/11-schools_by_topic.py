@@ -7,11 +7,11 @@
 from pymongo import MongoClient
 
 
-def school_by_topics(mongo_collection, topics):
+def school_by_topics(mongo_collection, topic):
     """
     Documnents???
     """
 
-    documents = mongo_collection.find({"topics": {"$all": topics}})
+    documents = mongo_collection.find({"topics": topic})
 
-    return documents
+    return list(documents)
