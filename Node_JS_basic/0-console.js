@@ -1,3 +1,3 @@
 function displayMessage(msg){
-    process.stdout.write(message)
+    process.stdout.write(msg)
 }
