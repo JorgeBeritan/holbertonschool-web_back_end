@@ -1,1 +1,1 @@
-README example
+README example.example
